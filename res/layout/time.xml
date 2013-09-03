@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    
+ >
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="@string/time"
+        android:gravity="center_horizontal"
+        />
+    
+    
+    <EditText 
+        android:id="@+id/number1"
+        android:hint="@string/inputNum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        >
+        <requestFocus/>
+    </EditText>
+    <Spinner 
+        android:id="@+id/spin1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layerType="software"
+        
+        />
+    
+    <EditText 
+        android:id="@+id/result"
+        android:hint="@string/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:enabled="false"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        />
+    
+    <Spinner 
+        android:id="@+id/spin2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layerType="software"
+        
+        />
+    
+    <Button 
+        android:id="@+id/btn"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:layout_gravity="center_horizontal"
+        android:background="#8ed8ed"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        />
+    
+
+</LinearLayout>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#078901"
+        android:cursorVisible="false"
+        android:enabled="false"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="text"
+        android:paddingRight="5dp"
+        android:text="@string/edit"
+        android:textSize="45sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="364dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:stretchColumns="0,1,2,3"
+        android:weightSum="4" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2" >
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="7"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:onClick="Button_click"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="8"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:onClick="Button_click"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="9"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btndivide"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="/"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+          <!--   <android.support.v4.widget.Space
+                android:id="@+id/space1"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content" />--> 
+
+            
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnsin"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="sin"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" 
+                />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btncos"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="cos"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btntan"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="tan"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnclear"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_span="2"
+                android:text="clear"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2" >
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="4"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="5"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="6"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnmulti"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="*"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <!-- <android.support.v4.widget.Space
+                android:id="@+id/space2"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                 /> -->
+
+            <Button
+                android:id="@+id/btnpercentage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="%"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic"
+                android:onClick="Button_click"
+                 />
+
+            <Button
+                android:id="@+id/btnpower"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="^"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic"
+                android:onClick="Button_click"
+                 />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnfactorial"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="!"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btnopenbrace"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="("
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btncls"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="cls"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2" >
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnsub"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="-"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+           <!--  <android.support.v4.widget.Space
+                android:id="@+id/space3"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content" /> -->
+            
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnreci"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="1/x"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnsqr"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="x²"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btncube"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="x³"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnclosebrace"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text=")"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnroot"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="√"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2" >
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_span="2"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btndecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="."
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnadd"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="+"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+        <!--     <android.support.v4.widget.Space
+                android:id="@+id/space4"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content" /> -->
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnexponent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="e"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnlog"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="log"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:onClick="Button_click"
+                android:id="@+id/btnln"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="ln"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btnequal"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_span="2"
+                android:text="="
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
